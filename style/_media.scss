@@ -1,0 +1,104 @@
+.confirmation-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13, 117, 255, 0.2);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+  .confirmation-section .confirmation {
+    text-align: right;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  .confirmation-section .confirmation div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .confirmation-section .confirmation div .closeBtn {
+    background: #0d75ff;
+    padding: 6px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .confirmation-section .confirmation .noBtn {
+    background-color: #75828a;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .confirmation-section .confirmation .yesBtn {
+    background-color: #0d75ff;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .modal {
+    display: flex;
+  }
+  .modal .modal-left {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60vw;
+  }
+  .modal .modal-inner {
+    overflow-y: scroll;
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .modal .modal-inner .modal-header {
+    margin: 0 auto;
+    background: #f8fafd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 22px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  .modal .modal-inner .modal-header .modalClose {
+    cursor: pointer;
+  }
+  .modal .modal-inner .modal-header .modalClose:hover {
+    color: #0d75ff;
+  }
+  .modal .modal-inner img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .modal .modal-inner .modal-title {
+    margin: 0 auto;
+    color: #58667e;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 170.3%;
+    padding: 0 35px 0 41px;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+  }

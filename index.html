@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+
+    <section class="input-section">
+      <div class="container2">
+        <div class="input-inner">
+          <div class="input">
+            <a href="#" class="login-logo">
+              <img
+                src="./image/icons/logobook.svg"
+                alt="logo"
+                width="226"
+                height="43"
+              />
+            </a>
+            <form id="form">
+              <div>
+                <img
+                  src="./image/icons/user.svg"
+                  alt="userIcon"
+                  width="20"
+                  height="20"
+                />
+                <input type="text" placeholder="Username" id="userName" />
+              </div>
+              <div>
+                <img
+                  src="./image/icons/lock.svg"
+                  alt="passwordIcon"
+                  width="20"
+                  height="20"
+                />
+                <input type="password" placeholder="password" id="password" />
+                <span class="material-symbols-outlined passwordEye">
+                  visibility
+                </span>
+              </div>
+              <button type="submit" class="btn">login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="./js/login.js"></script>
+  </body>
+</html>

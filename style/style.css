@@ -1,0 +1,238 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    font-style: normal;
+    line-height: normal;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .hidden {
+    display: none;
+  }
+  .btn {
+    outline: none;
+    border: none;
+  }
+  .dark-mode .header__top,
+  .dark-mode .header__bottom {
+    background-color: #6ba2e9;
+  }
+  .dark-mode aside {
+    background-color: #6ba2e9;
+  }
+  .dark-mode .right-section {
+    background-color: #0d75ff;
+  }
+  .success {
+    border: 1px solid green !important;
+  }
+  .error {
+    border: 1px solid red !important;
+  }
+  .input-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../image/image/library-book-bookshelf-read.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  .container2 {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .input-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .input .login-logo {
+    display: block;
+    margin-bottom: 50px;
+  }
+  .input form div {
+    position: relative;
+  }
+  .input form div img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .input form div input {
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background: transparent;
+    padding: 13px 0 13px 50px;
+    width: 300px;
+    height: 45px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    background: transparent;
+  }
+  .input form div #userName {
+    margin-bottom: 20px;
+    padding-right: 50px;
+  }
+  .input form div #password {
+    margin-bottom: 43px;
+    padding-right: 70px;
+  }
+  .input form div .passwordEye {
+    position: absolute;
+    top: 10px;
+    color: white;
+    right: 12px;
+    cursor: pointer;
+  }
+  .input form div input::-moz-placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .input form div input::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .input form button {
+    width: 300px;
+    height: 45px;
+    color: #0d75ff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all ease 0.4s;
+  }
+  .input form button:hover {
+    background-color: #0d75ff;
+    color: #fff;
+  }
+  /* header */
+  main {
+    display: flex;
+  }
+  header {
+    width: 100vw;
+  }
+  header .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px 12px 23px;
+    background: #fff;
+  }
+  header .header__top form label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  header .header__top form label input {
+    width: 670px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid #e3e6eb;
+    background: #f8fafd;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 17px 50px;
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 13px;
+    font-weight: 400;
+    outline-color: #0d75ff;
+  }
+  header .header__top form label img {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    cursor: pointer;
+  }
+  header .header__top form label input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 13px;
+    font-weight: 400;
+  }
+  header .header__top form label input::placeholder {
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 13px;
+    font-weight: 400;
+  }
+  header .header__top div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  header .header__top div button {
+    border-radius: 4px;
+    background: #0d75ff;
+    width: 99px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 11px 23px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  header .header__top div button:hover {
+    background-color: rgba(13, 117, 255, 0.6);
+  }
+  header .header__top div img {
+    cursor: pointer;
+  }
+  header .header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 41px 20px 0;
+    border: 1px solid #e3e6eb;
+    background-color: #fff;
+  }
+  header .header__bottom h3 {
+    color: #222531;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header .header__bottom button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    background: #a6b0c3;
+    width: 165px;
+    height: 34px;
+    padding: 5px 13px;
+    cursor: pointer;
+  }
+  header .header__bottom button span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }

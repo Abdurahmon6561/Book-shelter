@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="./style/home.css" />
+    <title>Books</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__top">
+          <a href="#">
+            <img
+              src="./image/icons/logoblue.svg"
+              alt="logo"
+              width="226"
+              height="44"
+            />
+          </a>
+
+          <form id="formHome">
+            <label for="search">
+              <img
+                src="./image/icons/searchlupa.svg"
+                alt="sarchIcon"
+                width="19"
+                height="19"
+              />
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search books"
+              />
+            </label>
+          </form>
+
+          <div class="right">
+            <img
+              src="./image/icons/sun-2.svg"
+              alt="lightModeicon"
+              width="23"
+              height="23"
+              class="lightmode"
+            />
+            <img
+              src="./image/icons/dark_mode.svg"
+              alt="moon"
+              width="23"
+              height="23"
+              class="darkmode hidden"
+            />
+            <button class="btn logOut">Logout</button>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <p></p>
+          <h3>Showing 17 Result(s)</h3>
+          <button class="btn">
+            <img
+              src="./image/icons/calendar_today.svg"
+              alt="calendarIcon"
+              width="24"
+              height="24"
+            />
+            <span>Order by newest</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- aside section -->
+      <aside class="aside-section">
+        <div class="aside">
+          <h2>Bookmarks</h2>
+          <span
+            >If you don’t like to read, you haven’t found the right book</span
+          >
+          <div class="savedBooks"></div>
+        </div>
+      </aside>
+
+      <!-- right section  -->
+      <section class="right-section">
+        <div class="books"></div>
+      </section>
+    </main>
+
+    <!-- modal section -->
+    <section class="modal-section hidden">
+      <div class="modal">
+        <div class="modal-left"></div>
+        <div class="modal-inner">
+          <div class="modal-header">
+            <span class="modalBookName">Python</span>
+            <span class="material-symbols-outlined modalClose"> close </span>
+          </div>
+          <img
+            src="	https://covers.openlibrary.org/b/olid/OL25683499M.jpg"
+            alt="bookImg"
+            width="229"
+            height="229"
+          />
+          <p class="modal-title">
+            Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum.
+            Incididunt quis mollit elit commodo cillum eiusmod reprehenderit
+            labore irure. Cillum et incididunt et nostrud exercitation quis aute
+            laboris non ut adipisicing. Laboris ad minim aute nulla proident
+            deserunt velit anim sunt aliquip ut sit. Exercitation aliquip
+            ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod
+            sit consectetur mollit ea aliqua officia consequat. Magna non mollit
+            nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi
+            mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad
+            ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip
+            non consectetur esse proident duis Lorem.
+          </p>
+          <div class="modalAuthor">
+            <p>Author :</p>
+            <p class="Author">Jamal Kasper</p>
+          </div>
+          <div class="published">
+            <p>Published :</p>
+            <p class="publish">2019</p>
+          </div>
+          <div class="publishers">
+            <p>Publishers :</p>
+            <p class="publisher">Hollman</p>
+          </div>
+          <div class="categories">
+            <p>Categories :</p>
+            <p class="category">Computers</p>
+          </div>
+          <div class="pages">
+            <p>Pages Count :</p>
+            <p class="pagesCount">346</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- logout  section-->
+    <section class="confirm hidden">
+      <div class="confirmation-section">
+        <div class="confirmation">
+          <div>
+            <p>Do you want to log out this website?</p>
+            <span class="material-symbols-outlined closeBtn"> close </span>
+          </div>
+          <button class="noBtn btn">No</button>
+          <button class="yesBtn btn">Yes</button>
+        </div>
+      </div>
+    </section>
+    <!-- logout section -->
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>
